@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<AssemblyName>des</AssemblyName>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="des.cs" />
+		<Compile Include="lib\Options.cs" />
+	</ItemGroup>
+	<Target Name="Build">
+		<CSC Sources="@(Compile)" OutputAssembly="$(AssemblyName).exe" EmitDebugInformation="false" />
+	</Target>
+</Project>

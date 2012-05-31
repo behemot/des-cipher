@@ -1,0 +1,13 @@
+Build project
+
+MSBuild.exe .\des.csproj
+
+or use VS 2010
+
+Encrypt
+
+.\des.exe encrypt /password:pass /in:input.txt /out:output.txt
+
+Decrypt
+
+.\des.exe decrypt /password:pass /in:output.txt /out:out.txt
